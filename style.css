@@ -1,0 +1,74 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* Warna latar belakang putih */
+    color:black; /* Warna teks merah */
+}
+
+header {
+    text-align: center;
+    position: relative;
+    background-color: #ff0000; /* Warna latar belakang header merah */
+    color: #ffffff; /* Warna teks header putih */
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    padding: 2em;
+}
+
+.header-content img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.header-text {
+    text-align: left;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.article-content {
+    padding: 20px;
+}
+
+.article-content h2 {
+    color: #ff0000; /* Warna teks judul merah */
+}
+
+.article-content p {
+    line-height: 1.6;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #ff3333; /* Warna latar belakang footer merah muda */
+    color: #ffffff; /* Warna teks footer putih */
+}
+
+/* Animasi */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated {
+    animation: fadeInUp 1.5s ease-in-out;
+}
